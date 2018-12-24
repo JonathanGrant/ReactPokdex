@@ -8,15 +8,15 @@ self.__precacheManifest = [
     "url": "/ReactPokdex/static/js/runtime~main.5590be5a.js"
   },
   {
-    "revision": "4a962981af3707cfd671",
-    "url": "/ReactPokdex/static/js/main.4a962981.chunk.js"
+    "revision": "f5e5249af3f01f2f7826",
+    "url": "/ReactPokdex/static/js/main.f5e5249a.chunk.js"
   },
   {
     "revision": "00316d90913381b4c0bf",
     "url": "/ReactPokdex/static/js/1.00316d90.chunk.js"
   },
   {
-    "revision": "4a962981af3707cfd671",
+    "revision": "f5e5249af3f01f2f7826",
     "url": "/ReactPokdex/static/css/main.b02373ac.chunk.css"
   },
   {
@@ -24,7 +24,7 @@ self.__precacheManifest = [
     "url": "/ReactPokdex/static/css/1.a2bb84fe.chunk.css"
   },
   {
-    "revision": "c4d815291054a4ae04236bab39414535",
+    "revision": "b8dd58f45f599d879f0751fd07d111ab",
     "url": "/ReactPokdex/index.html"
   }
 ];
