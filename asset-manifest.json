@@ -1,7 +1,7 @@
 {
   "main.css": "/ReactPokdex/static/css/main.d945c8a2.chunk.css",
-  "main.js": "/ReactPokdex/static/js/main.e9035b78.chunk.js",
-  "main.js.map": "/ReactPokdex/static/js/main.e9035b78.chunk.js.map",
+  "main.js": "/ReactPokdex/static/js/main.eb740b06.chunk.js",
+  "main.js.map": "/ReactPokdex/static/js/main.eb740b06.chunk.js.map",
   "static/css/1.aeb41fb1.chunk.css": "/ReactPokdex/static/css/1.aeb41fb1.chunk.css",
   "static/js/1.54854b91.chunk.js": "/ReactPokdex/static/js/1.54854b91.chunk.js",
   "static/js/1.54854b91.chunk.js.map": "/ReactPokdex/static/js/1.54854b91.chunk.js.map",
@@ -11,6 +11,6 @@
   "static/media/logo.svg": "/ReactPokdex/static/media/logo.5d5d9eef.svg",
   "static/css/1.aeb41fb1.chunk.css.map": "/ReactPokdex/static/css/1.aeb41fb1.chunk.css.map",
   "index.html": "/ReactPokdex/index.html",
-  "precache-manifest.718a5f895c00e499fe739808d0338339.js": "/ReactPokdex/precache-manifest.718a5f895c00e499fe739808d0338339.js",
+  "precache-manifest.d5ecc92e6ff40bb67beb87c826351935.js": "/ReactPokdex/precache-manifest.d5ecc92e6ff40bb67beb87c826351935.js",
   "service-worker.js": "/ReactPokdex/service-worker.js"
 }
