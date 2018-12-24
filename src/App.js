@@ -4,6 +4,11 @@ import './App.css';
 import GridLayout from 'react-grid-layout';
 import '../node_modules/react-grid-layout/css/styles.css';
 import '../node_modules/react-resizable/css/styles.css';
+import {
+  BrowserRouter as Router,
+  Route,
+  Redirect
+} from 'react-router-dom'
 
 function capFirst(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
@@ -50,12 +55,14 @@ class MyInput extends Component {
   }
 }
 
-class App extends Component {
+class MyPokedex extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      pokeNum: '2'
+    let defaultID = '2';
+    if (this.props.match.params['id']) {
+      defaultID = this.props.match.params['id']
     }
+    this.updatePokeNum({target: {value: defaultID}});
   }
 
   updatePokeNum(e) {
@@ -63,16 +70,39 @@ class App extends Component {
     if (num > 802) {
       console.log("No pokemon over 802.")
       num = '802';
+    } else if (num < 1) {
+      console.log("No pokemon less than 1.");
+      num = '1';
     }
-    this.setState({pokeNum: num})
+    if (this.state) {
+      this.setState({pokeNum: num})
+    } else {
+      this.state = {pokeNum: num}
+    }
+    this.props.history.push('/' + num)
   }
 
   render() {
+    console.log(this);
+    if (!this.state) {
+      return (<h1>Loading...</h1>)
+    }
     return (
       <div className="App">
 	    <MyPokemon pokeNum={this.state.pokeNum}/>
         <MyInput pokeNum={this.state.pokeNum} update={this.updatePokeNum.bind(this)}/>
       </div>
+    )
+  }
+}
+
+class App extends Component {
+
+  render() {
+    return (
+      <Router>
+        <Route path='/:id?' component={MyPokedex}/>
+      </Router>
     );
   }
 }
