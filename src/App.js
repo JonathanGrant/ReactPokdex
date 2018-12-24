@@ -60,6 +60,10 @@ class App extends Component {
 
   updatePokeNum(e) {
     let num = e.target.value.replace ( /[^\d.]/g, '' );
+    if (num > 802) {
+      console.log("No pokemon over 802.")
+      num = '802';
+    }
     this.setState({pokeNum: num})
   }
 
