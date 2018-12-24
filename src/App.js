@@ -100,7 +100,7 @@ class App extends Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Route path='/:id?' component={MyPokedex}/>
       </Router>
     );
